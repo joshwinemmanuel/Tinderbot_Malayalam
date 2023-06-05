@@ -59,7 +59,7 @@ def tester(file_path, file_name):
         predicted_name=name[label]
         
 
-        if (confidence >= 200) or (70 <= confidence <= 90):#If confidence more than 37 then don't print predicted face text on screen
+        if (confidence >= 50):#If confidence more than 37 then don't print predicted face text on screen
             mtch(0)
             continue
         fr.put_text(test_img,predicted_name,x,y)
